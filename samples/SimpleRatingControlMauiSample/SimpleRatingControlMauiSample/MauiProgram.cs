@@ -1,4 +1,6 @@
-﻿namespace SimpleRatingControlMauiSample;
+﻿using SimpleRatingControlMaui;
+
+namespace SimpleRatingControlMauiSample;
 
 public static class MauiProgram
 {
@@ -7,6 +9,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+			.UseSimpleRatingControl()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
