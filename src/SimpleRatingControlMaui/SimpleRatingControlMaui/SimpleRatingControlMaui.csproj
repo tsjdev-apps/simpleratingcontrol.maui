@@ -15,6 +15,19 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>SimpleRatingControl.MAUI</PackageId>
+		<Title>Simple Rating Control for .NET MAUI</Title>
+		<Version>0.0.1</Version>
+		<Authors>tsjdev-apps</Authors>
+		<Product>SimpleRatingControl.MAUI</Product>
+		<Description>Simple Rating Control for .NET MAUI</Description>
+		<Copyright>© Thomas Sebastian Jensen | 2017-2022</Copyright>
+		<PackageProjectUrl>https://github.com/tsjdev-apps/simpleratingcontrol.maui</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/tsjdev-apps/simpleratingcontrol.maui</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>rating;.net maui;simple</PackageTags>
+		<PackageReleaseNotes>First version of Simple Rating Control for .NET MAUI</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
