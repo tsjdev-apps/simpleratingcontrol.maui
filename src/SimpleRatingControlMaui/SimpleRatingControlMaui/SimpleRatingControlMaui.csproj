@@ -28,6 +28,7 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>rating;.net maui;simple</PackageTags>
 		<PackageReleaseNotes>First version of Simple Rating Control for .NET MAUI</PackageReleaseNotes>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 
 	<ItemGroup>
