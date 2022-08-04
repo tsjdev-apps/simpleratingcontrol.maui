@@ -11,25 +11,25 @@
         <controls:SimpleRatingControl Amount="5"
                                       CurrentValue="1"
                                       AccentColor="Black"
-                                      StarSize="36"
+                                      FontSize="36"
                                       RatingType="Circle"/>
 
         <controls:SimpleRatingControl Amount="5"
                                       CurrentValue="2"
                                       AccentColor="Blue"
-                                      StarSize="36"
+                                      FontSize="36"
                                       RatingType="Heart"/>
 
         <controls:SimpleRatingControl Amount="5"
                                       CurrentValue="4"
                                       AccentColor="Red"
-                                      StarSize="36"
+                                      FontSize="36"
                                       RatingType="Shield"/>
 
         <controls:SimpleRatingControl Amount="5"
                                       CurrentValue="4"
                                       AccentColor="DarkGoldenrod"
-                                      StarSize="36"
+                                      FontSize="36"
                                       RatingType="Star" />
     </VerticalStackLayout>
 

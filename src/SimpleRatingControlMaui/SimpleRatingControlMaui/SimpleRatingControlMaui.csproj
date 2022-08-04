@@ -18,7 +18,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>SimpleRatingControl.MAUI</PackageId>
 		<Title>Simple Rating Control for .NET MAUI</Title>
-		<Version>0.0.1</Version>
+		<Version>0.0.2</Version>
 		<Authors>tsjdev-apps</Authors>
 		<Product>SimpleRatingControl.MAUI</Product>
 		<Description>Simple Rating Control for .NET MAUI</Description>
@@ -27,7 +27,7 @@
 		<RepositoryUrl>https://github.com/tsjdev-apps/simpleratingcontrol.maui</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>rating;.net maui;simple</PackageTags>
-		<PackageReleaseNotes>First version of Simple Rating Control for .NET MAUI</PackageReleaseNotes>
+		<PackageReleaseNotes>Rename StarSize property to FontSize.</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 
