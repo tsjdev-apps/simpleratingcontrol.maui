@@ -20,13 +20,13 @@ public class SimpleRatingControl : HorizontalStackLayout
         set => SetValue(AmountProperty, value);
     }
 
-    public static readonly BindableProperty StarSizeProperty =
-      BindableProperty.Create(nameof(StarSize), typeof(double), typeof(SimpleRatingControl), defaultValue: 24d, propertyChanged: OnRefreshControl);
+    public static readonly BindableProperty FontSizeProperty =
+      BindableProperty.Create(nameof(FontSize), typeof(double), typeof(SimpleRatingControl), defaultValue: 24d, propertyChanged: OnRefreshControl);
 
-    public double StarSize
+    public double FontSize
     {
-        get => (double)GetValue(StarSizeProperty);
-        set => SetValue(StarSizeProperty, value);
+        get => (double)GetValue(FontSizeProperty);
+        set => SetValue(FontSizeProperty, value);
     }
 
     public static readonly BindableProperty AccentColorProperty =
@@ -95,7 +95,7 @@ public class SimpleRatingControl : HorizontalStackLayout
 
     private Label CreateLabel(State state)
     {
-        var label = new Label { FontFamily = "MDI", TextColor = AccentColor, FontSize = StarSize };
+        var label = new Label { FontFamily = "MDI", TextColor = AccentColor, FontSize = FontSize };
 
         switch (RatingType)
         {
