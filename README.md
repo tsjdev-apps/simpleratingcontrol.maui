@@ -52,7 +52,7 @@ Now you can use the `SimpleRatingControl` from this namespace:
 <controls:SimpleRatingControl Amount="5"
                               CurrentValue="1"
                               AccentColor="Black"
-                              StarSize="36"
+                              FontSize="36"
                               RatingType="Circle" />
 ```
 
@@ -63,7 +63,7 @@ Now you can use the `SimpleRatingControl` from this namespace:
 | Property       | Type          | Description                                              | Default Value |
 |----------------|---------------|----------------------------------------------------------|---------------|
 | `CurrentValue` | `double`      | Sets the value which should be used as the rating.       | `0`           |
-| `Amount`       | `double`      | Sets the amount of the maximum amount of possible stars. | `10`          |
-| `StarSize`     | `double`      | Sets the size of each star.                              | `24`          |
-| `AccentColor`  | `Color`       | Sets the color of the stars.                             | `Red`         |
+| `Amount`       | `double`      | Sets the maximum amount                                  | `10`          |
+| `FontSize`     | `double`      | Sets the size of each element.                           | `24`          |
+| `AccentColor`  | `Color`       | Sets the color of the element.                           | `Red`         |
 | `RatingType`   | `RatingType`  | Sets the type of the icon which should be used.          | `Star`        |
