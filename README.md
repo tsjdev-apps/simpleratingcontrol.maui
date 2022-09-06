@@ -2,19 +2,17 @@
 
 A Simple Rating Control for .NET MAUI using an icon font.
 
-<br/>
 
 ## Screenshots
 
 ### Android 
 
-<img src="docs/sample-android.png" width="250" />
+![Android Screenshot](https://github.com/tsjdev-apps/simpleratingcontrol.maui/raw/main/docs/sample-android.png)
 
 ### Windows 
 
-<img src="docs/sample-windows.png" width="250" />
+![Windows Screenshot](https://github.com/tsjdev-apps/simpleratingcontrol.maui/raw/main/docs/sample-windows.png) 
 
-<br/>
 
 ## Setup
 
@@ -24,7 +22,6 @@ Available on NuGet: [SimpleRatingControl.MAUI](https://www.nuget.org/packages/Si
 
 Just add the package to your .NET MAUI application.
 
-<br/>
 
 ## API Usage
 
@@ -56,7 +53,6 @@ Now you can use the `SimpleRatingControl` from this namespace:
                               RatingType="Circle" />
 ```
 
-<br/>
 
 ## Available Properties
 
