@@ -2,19 +2,17 @@
 
 A Simple Rating Control for .NET MAUI using an icon font.
 
-<br/>
 
 ## Screenshots
 
 ### Android 
 
-<img src="docs/sample-android.png" width="250" />
+![Android Screenshot](https://github.com/tsjdev-apps/simpleratingcontrol.maui/raw/main/docs/sample-android.png)
 
 ### Windows 
 
-<img src="docs/sample-windows.png" width="250" />
+![Windows Screenshot](https://github.com/tsjdev-apps/simpleratingcontrol.maui/raw/main/docs/sample-windows.png) 
 
-<br/>
 
 ## Setup
 
@@ -24,7 +22,6 @@ Available on NuGet: [SimpleRatingControl.MAUI](https://www.nuget.org/packages/Si
 
 Just add the package to your .NET MAUI application.
 
-<br/>
 
 ## API Usage
 
@@ -56,7 +53,6 @@ Now you can use the `SimpleRatingControl` from this namespace:
                               RatingType="Circle" />
 ```
 
-<br/>
 
 ## Available Properties
 
@@ -67,3 +63,10 @@ Now you can use the `SimpleRatingControl` from this namespace:
 | `FontSize`     | `double`      | Sets the size of each element.                           | `24`          |
 | `AccentColor`  | `Color`       | Sets the color of the element.                           | `Red`         |
 | `RatingType`   | `RatingType`  | Sets the type of the icon which should be used.          | `Star`        |
+
+
+## Resources
+
+- Blog post explaining the process of creating the NuGet package: [Medium](https://medium.com/medialesson/nuget-package-simple-rating-control-for-net-maui-73021f878afc)
+- Listed on [nuget.org](https://www.nuget.org/packages/SimpleRatingControl.MAUI)
+- Listed on [snppts.dev](https://snppts.dev/snippet/simple-rating-control-maui)
