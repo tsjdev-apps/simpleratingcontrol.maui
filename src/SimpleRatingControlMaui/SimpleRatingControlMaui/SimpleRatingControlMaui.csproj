@@ -27,7 +27,7 @@
 		<RepositoryUrl>https://github.com/tsjdev-apps/simpleratingcontrol.maui</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>rating;.net maui;simple</PackageTags>
-		<PackageReleaseNotes>Rename StarSize property to FontSize.</PackageReleaseNotes>
+		<PackageReleaseNotes>Use M.BindableProperty.Generator NuGet package to simplify the code. Set HorizontalOptions and VerticalOptions to Center.</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 
