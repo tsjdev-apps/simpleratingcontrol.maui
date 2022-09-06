@@ -7,11 +7,11 @@ A Simple Rating Control for .NET MAUI using an icon font.
 
 ### Android 
 
-![Android Screenshot](https://github.com/tsjdev-apps/simpleratingcontrol.maui/raw/main/docs/sample-android.png)
+![Android Screenshot](https://raw.githubusercontent.com/tsjdev-apps/simpleratingcontrol.maui/main/docs/sample-android.png)
 
 ### Windows 
 
-![Windows Screenshot](https://github.com/tsjdev-apps/simpleratingcontrol.maui/raw/main/docs/sample-windows.png) 
+![Windows Screenshot](https://raw.githubusercontent.com/tsjdev-apps/simpleratingcontrol.maui/main/docs/sample-windows.png) 
 
 
 ## Setup
