@@ -1,4 +1,4 @@
-using Maui.BindableProperty.Generator.Core;
+﻿using Maui.BindableProperty.Generator.Core;
 
 namespace SimpleRatingControlMaui;
 
@@ -24,6 +24,8 @@ public partial class SimpleRatingControl : HorizontalStackLayout
     {
         HorizontalOptions = LayoutOptions.Center;
         VerticalOptions = LayoutOptions.Center;
+
+        UpdateLayout();
     }
 
     private void UpdateLayout()
