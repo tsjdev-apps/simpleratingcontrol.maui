@@ -1,59 +1,32 @@
-﻿namespace SimpleRatingControlMaui;
+﻿using Maui.BindableProperty.Generator.Core;
 
-public class SimpleRatingControl : HorizontalStackLayout
+namespace SimpleRatingControlMaui;
+
+public partial class SimpleRatingControl : HorizontalStackLayout
 {
-    public static readonly BindableProperty CurrentValueProperty =
-          BindableProperty.Create(nameof(CurrentValue), typeof(double), typeof(SimpleRatingControl), defaultValue: 0d, propertyChanged: OnRefreshControl);
+    [AutoBindable(DefaultValue = "0d", OnChanged = nameof(UpdateLayout))]
+    private readonly double _currentValue;
 
-    public double CurrentValue
+    [AutoBindable(DefaultValue = "10", OnChanged = nameof(UpdateLayout))]
+    private readonly int _amount;
+
+    [AutoBindable(DefaultValue = "24d", OnChanged = nameof(UpdateLayout))]
+    private readonly double _fontSize;
+
+    [AutoBindable(DefaultValue = "Colors.Red", OnChanged = nameof(UpdateLayout))]
+    private readonly Color _accentColor;
+
+    [AutoBindable(DefaultValue = "RatingType.Star", OnChanged = nameof(UpdateLayout))]
+    private readonly RatingType _ratingType;
+
+
+    public SimpleRatingControl()
     {
-        get => (double)GetValue(CurrentValueProperty);
-        set => SetValue(CurrentValueProperty, value);
+        HorizontalOptions = LayoutOptions.Center;
+        VerticalOptions = LayoutOptions.Center;
+
+        UpdateLayout();
     }
-
-    public static readonly BindableProperty AmountProperty =
-      BindableProperty.Create(nameof(Amount), typeof(int), typeof(SimpleRatingControl), defaultValue: 10, propertyChanged: OnRefreshControl);
-
-    public int Amount
-    {
-        get => (int)GetValue(AmountProperty);
-        set => SetValue(AmountProperty, value);
-    }
-
-    public static readonly BindableProperty FontSizeProperty =
-      BindableProperty.Create(nameof(FontSize), typeof(double), typeof(SimpleRatingControl), defaultValue: 24d, propertyChanged: OnRefreshControl);
-
-    public double FontSize
-    {
-        get => (double)GetValue(FontSizeProperty);
-        set => SetValue(FontSizeProperty, value);
-    }
-
-    public static readonly BindableProperty AccentColorProperty =
-        BindableProperty.Create(nameof(AccentColor), typeof(Color), typeof(SimpleRatingControl), defaultValue: Colors.Red, propertyChanged: OnRefreshControl);
-
-    public Color AccentColor
-    {
-        get => (Color)GetValue(AccentColorProperty);
-        set => SetValue(AccentColorProperty, value);
-    }
-
-    public static readonly BindableProperty RatingTypeProperty =
-        BindableProperty.Create(nameof(RatingType), typeof(RatingType), typeof(SimpleRatingControl), defaultValue: RatingType.Star, propertyChanged: OnRefreshControl);
-
-    public RatingType RatingType
-    {
-        get => (RatingType)GetValue(RatingTypeProperty);
-        set => SetValue(RatingTypeProperty, value);
-    }
-
-
-    private static void OnRefreshControl(BindableObject bindable, object oldValue, object newValue)
-    {
-        if (bindable is SimpleRatingControl ratingControl)
-            ratingControl.UpdateLayout();
-    }
-
 
     private void UpdateLayout()
     {

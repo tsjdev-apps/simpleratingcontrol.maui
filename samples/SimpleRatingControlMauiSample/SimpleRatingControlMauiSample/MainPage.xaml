@@ -8,23 +8,25 @@
                          HorizontalOptions="Center"
                          Spacing="12">
 
+        <controls:SimpleRatingControl />
+
         <controls:SimpleRatingControl Amount="5"
                                       CurrentValue="1"
                                       AccentColor="Black"
                                       FontSize="36"
-                                      RatingType="Circle"/>
+                                      RatingType="Circle" />
 
         <controls:SimpleRatingControl Amount="5"
-                                      CurrentValue="2"
+                                      CurrentValue="4"
                                       AccentColor="Blue"
                                       FontSize="36"
-                                      RatingType="Heart"/>
+                                      RatingType="Heart" />
 
         <controls:SimpleRatingControl Amount="5"
                                       CurrentValue="4"
                                       AccentColor="Red"
                                       FontSize="36"
-                                      RatingType="Shield"/>
+                                      RatingType="Shield" />
 
         <controls:SimpleRatingControl Amount="5"
                                       CurrentValue="4"
