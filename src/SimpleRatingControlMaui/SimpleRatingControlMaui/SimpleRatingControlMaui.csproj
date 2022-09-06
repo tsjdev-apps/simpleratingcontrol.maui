@@ -39,4 +39,8 @@
 	  <EmbeddedResource Include="Fonts\materialdesignicons-webfont.ttf" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="M.BindableProperty.Generator" Version="0.9.0" />
+	</ItemGroup>
+
 </Project>
