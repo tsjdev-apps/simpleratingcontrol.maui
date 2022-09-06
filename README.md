@@ -63,3 +63,10 @@ Now you can use the `SimpleRatingControl` from this namespace:
 | `FontSize`     | `double`      | Sets the size of each element.                           | `24`          |
 | `AccentColor`  | `Color`       | Sets the color of the element.                           | `Red`         |
 | `RatingType`   | `RatingType`  | Sets the type of the icon which should be used.          | `Star`        |
+
+
+## Resources
+
+- Blog post explaining the process of creating the NuGet package: [Medium](https://medium.com/medialesson/nuget-package-simple-rating-control-for-net-maui-73021f878afc)
+- Listed on [nuget.org](https://www.nuget.org/packages/SimpleRatingControl.MAUI)
+- Listed on [snppts.dev](https://snppts.dev/snippet/simple-rating-control-maui)
