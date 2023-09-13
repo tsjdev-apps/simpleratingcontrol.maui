@@ -32,8 +32,8 @@ public partial class SimpleRatingControl : HorizontalStackLayout
     {
         Children.Clear();
 
-        var intValue = (int)ClampValue(CurrentValue);
-        var decimalPart = CurrentValue - intValue;
+        int intValue = (int)ClampValue(CurrentValue);
+        double decimalPart = CurrentValue - intValue;
         bool isHalfStar = false;
 
         if (decimalPart > .25)
@@ -68,7 +68,12 @@ public partial class SimpleRatingControl : HorizontalStackLayout
 
     private Label CreateLabel(State state)
     {
-        var label = new Label { FontFamily = "MDI", TextColor = AccentColor, FontSize = FontSize };
+        Label label = new()
+        {
+            FontFamily = "MDI",
+            TextColor = AccentColor,
+            FontSize = FontSize
+        };
 
         switch (RatingType)
         {
@@ -81,6 +86,7 @@ public partial class SimpleRatingControl : HorizontalStackLayout
                     _ => MaterialDesignIconsFont.StarOutline,
                 };
                 break;
+
             case RatingType.Heart:
                 label.Text = state switch
                 {
@@ -90,6 +96,7 @@ public partial class SimpleRatingControl : HorizontalStackLayout
                     _ => MaterialDesignIconsFont.HeartOutline,
                 };
                 break;
+
             case RatingType.Circle:
                 label.Text = state switch
                 {
@@ -99,6 +106,7 @@ public partial class SimpleRatingControl : HorizontalStackLayout
                     _ => MaterialDesignIconsFont.CircleOutline,
                 };
                 break;
+
             case RatingType.Shield:
                 label.Text = state switch
                 {
@@ -116,10 +124,14 @@ public partial class SimpleRatingControl : HorizontalStackLayout
     private double ClampValue(double value)
     {
         if (value < 0)
+        {
             return 0;
+        }
 
         if (value > Amount)
+        {
             return Amount;
+        }
 
         return value;
     }

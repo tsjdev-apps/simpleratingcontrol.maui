@@ -6,7 +6,8 @@ public static class AppHostBuilderExtensions
     {
         builder.ConfigureFonts(fonts =>
         {
-            fonts.AddEmbeddedResourceFont(typeof(AppHostBuilderExtensions).Assembly, "materialdesignicons-webfont.ttf", "MDI");
+            fonts.AddEmbeddedResourceFont(typeof(AppHostBuilderExtensions).Assembly, 
+                "materialdesignicons-webfont.ttf", "MDI");
         });
 
         return builder;
