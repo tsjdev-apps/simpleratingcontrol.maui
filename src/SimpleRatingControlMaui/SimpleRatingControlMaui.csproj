@@ -18,7 +18,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>SimpleRatingControl.MAUI</PackageId>
 		<Title>Simple Rating Control for .NET MAUI</Title>
-		<Version>0.1.0</Version>
+		<Version>0.2.0</Version>
 		<Authors>tsjdev-apps</Authors>
 		<Product>SimpleRatingControl.MAUI</Product>
 		<Description>Simple Rating Control for .NET MAUI</Description>
@@ -27,10 +27,11 @@
 		<RepositoryUrl>https://github.com/tsjdev-apps/simpleratingcontrol.maui</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>rating;.net maui;simple</PackageTags>
+		<PackageIcon>icon.png</PackageIcon>
 		<PackageReleaseNotes>
-			- Update to .NET 7
-			- Update used NuGet packages
+			- Update to .NET8			
 			- Code improvements
+			- Add icon to NuGet package
 		</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
@@ -46,6 +47,10 @@
 	<ItemGroup>
 		<PackageReference Include="M.BindableProperty.Generator" Version="0.11.1" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.82" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath=""/>
 	</ItemGroup>
 
 </Project>
